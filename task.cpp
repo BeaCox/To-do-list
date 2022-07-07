@@ -202,13 +202,14 @@ void saveTask(char *password, task *mytask, char *userfile)
 {
     FILE *fp;
     //int len = strlen(userfile);
-    if ((fp = fopen(userfile, "a+")) == NULL)
+    if ((fp = fopen(userfile, "w+")) == NULL)
     {
         fprintf(stderr, "Fail to open file!\n");
         exit(0);
     }
     int i = 0;
-    fputs(encrypt(password), fp);
+    mytask[i].id=1;
+    fputs(password, fp);
     while ((mytask[i].id) != 0)
     {
         fputs(Int2String(mytask[i].id), fp);
@@ -234,7 +235,7 @@ void loadTask(task mytask[], char *userfile)
     FILE *fp;
     char mypassword[20], tmp[30]; // mypassword是用来储存第一行的密码的，tmp为临时储存的变量
     //int len = strlen(userfile);
-    if ((fp = fopen(userfile, "+")) == NULL)
+    if ((fp = fopen(userfile, "r+")) == NULL)
     {
         fprintf(stderr, "Fail to open file!\n");
         exit(0);
