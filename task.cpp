@@ -12,7 +12,7 @@
 
 
     int task::taskNum=0;
-    int task::taskLive=0;
+    int task::taskLive=0;//
 
     task::task()
     :start(2022,1,1,0,0),timerReminder(2022,1,1,0,0)
