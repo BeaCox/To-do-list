@@ -41,10 +41,10 @@
 
 比如：
 
+```
 $ myschedule  run     
-
 $ myschedule  user1 password   addtask  tasknam1….
-
+```
  
 
 ## 高级进阶 ( 可选, 加分项）
