@@ -18,7 +18,7 @@
         friend void loadTask(task mytask[], char *userfile);
         friend void delTask(task *myTask);
         friend char *encrypt(char *password);
-        friend void checkpassword();
+        friend bool checkpassword();
         friend void reminder(task t);
         friend void showTaskByDay(task *myTask,int year, int month, int day);
         friend void showTaskByMonth(task *myTask,int year, int month);
@@ -46,7 +46,7 @@ void reminder(task t);//提醒任务
 
 void showTaskByDay(task *myTask,int year, int month, int day);//按天显示任务
 void showTaskByMonth(task *myTask,int year, int month);//按月显示任务
-void checkpassword();//还没写
+bool checkpassword();//还没写
 char *encrypt(char *password);//还没写
 void loadTask(task *mytask,char *userfile);//写完了
 void saveTask(char *password,task *mytask,char *userfile);//写完了

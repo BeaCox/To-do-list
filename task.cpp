@@ -234,7 +234,7 @@ void loadTask(task mytask[], char *userfile)
     FILE *fp;
     char mypassword[20], tmp[30]; // mypassword是用来储存第一行的密码的，tmp为临时储存的变量
     //int len = strlen(userfile);
-    if ((fp = fopen(userfile, "r+")) == NULL)
+    if ((fp = fopen(userfile, "+")) == NULL)
     {
         fprintf(stderr, "Fail to open file!\n");
         exit(0);
@@ -247,8 +247,6 @@ void loadTask(task mytask[], char *userfile)
         {
         case 0:
         {
-            if (tasknum > 0 && (String2Int(tmp) - mytask[tasknum - 1].id) > 1) //判断一下之前是否删除过这个区间的任务
-                tasknum = tasknum + (String2Int(tmp) - mytask[tasknum - 1].id) - 1;
             mytask[tasknum].id = String2Int(tmp);
             tmpnumber++;
             break;
@@ -308,4 +306,10 @@ void loadTask(task mytask[], char *userfile)
             break;
         }
     }
+}
+char *encrypt(char *password){
+
+}
+bool checkpassword(){
+
 }
