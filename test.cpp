@@ -5,11 +5,11 @@
 task mytask[2];
 int main(){
     FILE *fp;
-    char admin[30]="d:\\yyy.txt";
+    char admin[30]="yyy";
     char password[8]="0123456";
     //mytask.setTask();
     mytask[0].display();
-    saveTask(password,mytask,admin);
-    //system("pause");
+    loadTask(mytask,name2File(admin));
+    //saveTask(password,mytask,name2File(admin));
     return 0;
 }

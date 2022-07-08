@@ -2,6 +2,7 @@
 #include <cstring>
 #include <stdio.h>
 #include "stringAndInt.h"
+#include "deleteSpace.h"
 char defaultName[20] = "学习C++";
 char defaultClassify[20] = "学习";
 int LIST_SIZE = 100;
@@ -197,7 +198,6 @@ void showTaskByMonth(task *myTask, int year, int month)
         myTask[loc[i]].display();
     }
 } //显示某一月的任务
-using namespace std;
 void saveTask(char *password, task *mytask, char *userfile)
 {
     FILE *fp;
@@ -209,23 +209,23 @@ void saveTask(char *password, task *mytask, char *userfile)
     }
     int i = 0;
     mytask[i].id=1;
-    fputs(password, fp);
+    fputs(password, fp);fputs("\n",fp);
     while ((mytask[i].id) != 0)
     {
-        fputs(Int2String(mytask[i].id), fp);
-        fputs(mytask[i].name, fp);
-        fputs(Int2String(mytask[i].start.year), fp);
-        fputs(Int2String(mytask[i].start.month), fp);
-        fputs(Int2String(mytask[i].start.day), fp);
-        fputs(Int2String(mytask[i].start.hour), fp);
-        fputs(Int2String(mytask[i].start.minute), fp);
-        fputs(mytask[i].classify, fp);
-        fputs(Int2String(mytask[i].priority), fp);
-        fputs(Int2String(mytask[i].timerReminder.year), fp);
-        fputs(Int2String(mytask[i].timerReminder.month), fp);
-        fputs(Int2String(mytask[i].timerReminder.day), fp);
-        fputs(Int2String(mytask[i].timerReminder.hour), fp);
-        fputs(Int2String(mytask[i].timerReminder.minute), fp);
+        fputs(Int2String(mytask[i].id), fp);fputs("\n",fp);
+        fputs(mytask[i].name, fp);fputs("\n",fp);
+        fputs(Int2String(mytask[i].start.year), fp);fputs("\n",fp);
+        fputs(Int2String(mytask[i].start.month), fp);fputs("\n",fp);
+        fputs(Int2String(mytask[i].start.day), fp);fputs("\n",fp);
+        fputs(Int2String(mytask[i].start.hour), fp);fputs("\n",fp);
+        fputs(Int2String(mytask[i].start.minute), fp);fputs("\n",fp);
+        fputs(mytask[i].classify, fp);fputs("\n",fp);
+        fputs(Int2String(mytask[i].priority), fp);fputs("\n",fp);
+        fputs(Int2String(mytask[i].timerReminder.year), fp);fputs("\n",fp);
+        fputs(Int2String(mytask[i].timerReminder.month), fp);fputs("\n",fp);
+        fputs(Int2String(mytask[i].timerReminder.day), fp);fputs("\n",fp);
+        fputs(Int2String(mytask[i].timerReminder.hour), fp);fputs("\n",fp);
+        fputs(Int2String(mytask[i].timerReminder.minute), fp);fputs("\n",fp);
         i++;
     }
     fclose(fp);
@@ -234,16 +234,16 @@ void loadTask(task mytask[], char *userfile)
 {
     FILE *fp;
     char mypassword[20], tmp[30]; // mypassword是用来储存第一行的密码的，tmp为临时储存的变量
-    //int len = strlen(userfile);
     if ((fp = fopen(userfile, "r+")) == NULL)
     {
         fprintf(stderr, "Fail to open file!\n");
         exit(0);
     }
     int tasknum = 0, tmpnumber = 0; // tasknum用来收集task数目，tmpnumber用来收集task的第i位值
-    fgets(mypassword, 20, fp);
+    fgets(mypassword, 20, fp);deleteSpace(mypassword);
     while (fgets(tmp, 30, fp) != NULL)
     {
+        deleteSpace(tmp);
         switch (tmpnumber)
         {
         case 0:
@@ -306,6 +306,7 @@ void loadTask(task mytask[], char *userfile)
             tasknum++;
             break;
         }
+        memset(tmp,0,sizeof(tmp));//记得清零tmp为后来做准备
     }
 }
 char *encrypt(char *password){
