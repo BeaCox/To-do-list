@@ -20,12 +20,12 @@
     this->id=0;
     int i = 0;
 	for (; name[i] != '\0'; ++i) {
-		this->name[i] = name[i];
+		this->name[i] = defaultName[i];
 	}
 	this->name[i] = '\0';
     i = 0;
 	for (; classify[i] != '\0'; ++i) {
-		this->classify[i] = classify[i];
+		this->classify[i] = defaultClassify[i];
 	}
     this->priority=3;
     }
@@ -39,41 +39,63 @@
         cout << "任务提醒时间: " << timerReminder.year << "-" << timerReminder.month << "-" << timerReminder.day << " " << timerReminder.hour << ":" << timerReminder.minute << endl << endl;
     }
 
-
-    void task::setTask(int id=0,char *name=defaultName,int sYear=2022,int sMonth=1,int sDay=1,int sHour=0,int sMinute=0,int rYear=2022,int rMonth=1,int rDay=1,int rHour=0,int rMinute=0,char *classify=defaultClassify,int priority=1)
+    void task::setTask()
     {
-    this->id=id;//！！！！！！！！！！随机分配id应该写在这里！！！！！！！！！！！
-    int i = 0;
-	for (; name[i] != '\0'; ++i) {
-		this->name[i] = name[i];
-	}
-	this->name[i] = '\0';
-    this->start=start;
-    i = 0;
-	for (; classify[i] != '\0'; ++i) {
-		this->classify[i] = classify[i];
-	}
-    this->classify[i] = '\0';
-    this->priority=priority;
-    this->timerReminder=timerReminder;
-    this->start.year=sYear;
-    this->start.month=sMonth;
-    this->start.day=sDay;
-    this->start.hour=sHour;
-    this->start.minute=sMinute;
-    this->timerReminder.year=rYear;
-    this->timerReminder.month=rMonth;
-    this->timerReminder.day=rDay;
-    this->timerReminder.hour=rHour;
-    this->timerReminder.minute=rMinute;
+    //！！！！！！！！！！分配id应该写在这里！！！！！！！！！！！
+        int i=0;
+        cout << "请输入任务名称：";
+        char _name[20];
+        cin>>_name;
+		for (; _name[i] != '\0'; ++i) {
+			this->name[i] = _name[i];
+		}
+		this->name[i] = '\0';
+        cout << "请输入任务开始时间（年-月-日 时:分）：";
+        int sYear, sMonth, sDay, sHour, sMinute;
+        cin >> sYear >> sMonth >> sDay >> sHour >> sMinute;
+        this->start.year=sYear;
+        this->start.month=sMonth;
+        this->start.day=sDay;
+        this->start.hour=sHour;
+        this->start.minute=sMinute;
+        cout << "请输入提醒时间（年-月-日 时:分）：";
+        int rYear, rMonth, rDay, rHour, rMinute;
+        cin >> rYear >> rMonth >> rDay >> rHour >> rMinute;
+        this->timerReminder.year=rYear;
+        this->timerReminder.month=rMonth;
+        this->timerReminder.day=rDay;
+        this->timerReminder.hour=rHour;
+        this->timerReminder.minute=rMinute;
+        char opt;
+        cout << "是否需要指定分类，默认为学习(y/n)：";
+        cin >> opt;
+        if(opt == 'y' || opt == 'Y'){
+            char _classify[20];
+            cin >> _classify;
+            i=0;
+		    for (; _classify[i] != '\0'; ++i) {
+			    this->classify[i] = _classify[i];
+		    }
+		    this->classify[i] = '\0';
+            }
+        else if (opt == 'n' || opt == 'N') cout << "已默认为学习" << endl;
+        else cout << "输入错误，已默认为学习" << endl;
+
+        cout << "是否需要指定优先级，默认为3，数字越小优先级越高(y/n)：";
+        cin >> opt;
+        if(opt == 'y' || opt == 'Y'){
+            int priority;
+            cin >> priority;
+            this->priority=priority;
+            }
+        else if (opt == 'n' || opt == 'N') cout << "已默认为3" << endl;
+        else cout << "输入错误，已默认为3" << endl;
     taskNum++;
     taskLive++;
+    cout << "任务创建成功！" << endl;
     }
 
-void delTask(task *myTask){
-    int deleteId;
-    cout << "请输入你要删除的任务对应的id: ";
-    cin >> deleteId;
+void delTask(task *myTask,int deleteId){
     if(deleteId <=0 ){
         cout << "任务id不存在!" << endl;
     }

@@ -14,7 +14,7 @@
     };
 
     class task{
-        friend void delTask(task *myTask);
+        friend void delTask(task *myTask, int deleteId);
         friend void reminder(task t);
         friend void showTaskByDay(task *myTask,int year, int month, int day);
         friend void showTaskByMonth(task *myTask,int year, int month);
@@ -25,13 +25,12 @@
         char classify[20];
         int priority;
         timeT timerReminder;
+    public: 
         static int taskNum;
         static int taskLive;
-    public: 
-
         task();
         void display();
-        void setTask(int id,char *name,int sYear,int sMonth,int sDay,int sHour,int sMinute,int rYear,int rMonth,int rDay,int rHour,int rMinute,char *classify,int priority);
+        void setTask();
 
 
     };
