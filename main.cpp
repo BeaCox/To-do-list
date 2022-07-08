@@ -26,7 +26,7 @@ void usage(const char * cmd)
 
 int main(int argc, char * argv[])
 {
-    int opt;
+    int opt,num;
     const char *optstring = "ras:d:h"; // 命令行参数有五个选项-rasdh，分别表示run add show del help
     while ((opt = getopt(argc, argv, optstring)) != -1) {
         switch (opt) {
