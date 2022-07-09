@@ -18,6 +18,7 @@
         friend void reminder(task t);
         friend void showTaskByDay(task *myTask,int year, int month, int day);
         friend void showTaskByMonth(task *myTask,int year, int month);
+        friend void showTaskAll(task *myTask);
     private:
         int id;
         char name[20];
@@ -41,4 +42,5 @@ void reminder(task t);//提醒任务
 
 void showTaskByDay(task *myTask,int year, int month, int day);//按天显示任务
 void showTaskByMonth(task *myTask,int year, int month);//按月显示任务
+void showTaskAll(task *myTask);//显示所有任务
 #endif
