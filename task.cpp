@@ -46,7 +46,7 @@ timeT::timeT(int y,int M,int d,int h,int m){
 
     void task::setTask()
     {
-    //！！！！！！！！！！分配id应该写在这里！！！！！！！！！！！
+        id=taskNum+1;
         int i=0;
         cout << "请输入任务名称：";
         char _name[20];
