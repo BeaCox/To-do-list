@@ -161,7 +161,7 @@ void delTask(task *myTask,int deleteId){
 
 
 
-        void showTaskByMonth(task *myTask,int year, int month){
+    void showTaskByMonth(task *myTask,int year, int month){
         int loc[LIST_SIZE]={-1};//用来记录每个任务的位置
         int num=0;//用来记录任务的个数
         for(int i=0;i<LIST_SIZE && myTask[i].id!=0;i++){
@@ -190,3 +190,24 @@ void delTask(task *myTask,int deleteId){
             myTask[loc[i]].display();
         }
     }//显示某一月的任务
+
+    void showTaskAll(task *myTask){
+        int loc[LIST_SIZE]={-1};//用来记录每个任务的位置
+        bool flag;//记录起泡中是否发生交换
+        int i,j,temp;
+        for( i=0;i<task::taskLive;i++){
+            flag=false;
+            for( j=0;j<task::taskLive-i;j++){
+                if((myTask[loc[j+1]].start.year<myTask[loc[j]].start.year) || (myTask[loc[j+1]].start.year==myTask[loc[j]].start.year&&myTask[loc[j+1]].start.month<myTask[loc[j]].start.month) || (myTask[loc[j+1]].start.year==myTask[loc[j]].start.year&&myTask[loc[j+1]].start.month==myTask[loc[j]].start.month&&myTask[loc[j+1]].start.day<myTask[loc[j]].start.day) || (myTask[loc[j+1]].start.year==myTask[loc[j]].start.year&&myTask[loc[j+1]].start.month==myTask[loc[j]].start.month&&myTask[loc[j+1]].start.day==myTask[loc[j]].start.day&&myTask[loc[j+1]].start.hour<myTask[loc[j]].start.hour) || (myTask[loc[j+1]].start.year==myTask[loc[j]].start.year&&myTask[loc[j+1]].start.month==myTask[loc[j]].start.month&&myTask[loc[j+1]].start.day==myTask[loc[j]].start.day&&myTask[loc[j+1]].start.hour==myTask[loc[j]].start.hour&&myTask[loc[j+1]].start.minute<myTask[loc[j]].start.minute)){
+                    temp=loc[j];
+                    loc[j]=loc[j+1];
+                    loc[j+1]=temp;
+                    flag=true;
+                }
+            }
+            if(!flag) break;
+        }//按照时间冒泡排序
+        for (i=0; i<task::taskLive; i++){
+            myTask[loc[i]].display();
+        }
+    }//显示所有任务
