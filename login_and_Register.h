@@ -42,6 +42,6 @@ void Register(char *inputName, char *inputPassword)
         printf("是否注册？注册请输入y或Y，按任意键重新注册\n");
         cin.getline(flag, 45);
     }
-    printf("注册成功！\n");
+    printf("注册成功！");
 }
 #endif
