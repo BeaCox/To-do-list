@@ -12,12 +12,12 @@ void usage(const char * cmd)
 {
 	printf("离线日程管理系统\n");
 	printf("可选参数 : %s [-r][-a][-s][-d][-h]\n", cmd);
-    printf("-r : 运行程序\n-a : 添加任务\n-s xxxx-xx或xxxx-xx-xx或不加参数 : 查看某月或某日或全部的任务\n-d <num> : 删除id为num的任务\n-h : 查看帮助\n");
+    printf("-r : 运行程序\n-a : 添加任务\n-sxxxx-xx或xxxx-xx-xx或不加参数 : 查看某月或某日或全部的任务\n-d<num> : 删除id为num的任务\n-h : 查看帮助\n");
 	printf("示例:\n");
 	printf("   %s  -r\n",  cmd);
 	printf("   %s  -a\n", cmd);
-    printf("   %s  -s 2022-07-10\n", cmd);
-    printf("   %s  -d 1\n", cmd);
+    printf("   %s  -s2022-07-10\n", cmd);
+    printf("   %s  -d1\n", cmd);
     printf("   %s  -h\n", cmd);
 	return;
 }
@@ -158,9 +158,9 @@ int main(int argc, char * argv[]){
                                     month=atoi(temp2);
                                     showTaskByMonth(myTask,year,month);
                                 }//如果参数为7字符即xxxx-xx，按月查看任务
-                                else if (strlen(commands[1])==0){
+                                else if (!optarg){
                                     showTaskAll(myTask);
-                                }//如果参数为0字符即不加参数，查看全部任务
+                                }//如果不加参数，查看全部任务
                                 else {printf("参数错误\n");usage(argv[0]);}//如果非上述情况，参数错误，报错并展示帮助信息
                                 }
                                 break;
