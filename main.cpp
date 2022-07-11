@@ -196,7 +196,7 @@ int main(int argc, char * argv[]){
                 break;
             case 's':
                 printf("请先登录……\n");//在这里续写
-                if (strlen(optarg)==10){
+                if (optarg && strlen(optarg)==10){
                     int year,month,day;
                     char temp1[5];
                     char temp2[3];
@@ -212,7 +212,7 @@ int main(int argc, char * argv[]){
                     day=atoi(temp3);
                     showTaskByDay(myTask,year,month,day);
                 }//如果参数为10字符即xxxx-xx-xx，按日查看任务
-                else if (strlen(optarg)==7){
+                else if (optarg && strlen(optarg)==7){
                     int year,month;
                     char temp1[5];
                     char temp2[3];
