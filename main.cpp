@@ -158,7 +158,7 @@ int main(int argc, char * argv[]){
                                     month=atoi(temp2);
                                     showTaskByMonth(myTask,year,month);
                                 }//如果参数为7字符即xxxx-xx，按月查看任务
-                                else if (!optarg){
+                                else if (commandcount==1){
                                     showTaskAll(myTask);
                                 }//如果不加参数，查看全部任务
                                 else {printf("参数错误\n");usage(argv[0]);}//如果非上述情况，参数错误，报错并展示帮助信息
@@ -224,9 +224,9 @@ int main(int argc, char * argv[]){
                     month=atoi(temp2);
                     showTaskByMonth(myTask,year,month);
                 }//如果参数为7字符即xxxx-xx，按月查看任务
-                else if (strlen(optarg)==0){
+                else if (!optarg){
                     showTaskAll(myTask);
-                }//如果参数为0字符即不加参数，查看全部任务
+                }//如果不加参数，查看全部任务
                 else {printf("参数错误\n");usage(argv[0]);}//如果非上述情况，参数错误，报错并展示帮助信息
                 break;
             case 'd':
