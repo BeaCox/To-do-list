@@ -131,9 +131,9 @@ void delTask(task *myTask,int deleteId){
 	for (int i = 0;i < task::taskLive;i++) {
         if ((nowTime->tm_year+1900) == t[i].timerReminder.year && (1 + nowTime->tm_mon) == t[i].timerReminder.month && nowTime->tm_mday == t[i].timerReminder.day && nowTime->tm_hour == t[i].timerReminder.hour && nowTime->tm_min == t[i].timerReminder.minute){
             cout << "现在" << t[i].timerReminder.hour <<"时" << t[i].timerReminder.minute << "分," << "您在" << t[i].start.hour <<"时" << t[i].start.minute << "分有任务：" << t[i].name << endl;
-            sleep(61);
             }
         }
+       	sleep(5);
       }
     };//提醒任务
 
