@@ -56,7 +56,7 @@ timeT::timeT(int y,int M,int d,int h,int m){
 			this->name[i] = _name[i];
 		}
 		this->name[i] = '\0';
-        cout << "请输入任务开始时间（年-月-日 时:分）：";
+        cout << "请输入任务开始时间（年 月 日 时 分）：";
         int sYear, sMonth, sDay, sHour, sMinute;
         cin >> sYear >> sMonth >> sDay >> sHour >> sMinute;
         this->start.year=sYear;
@@ -64,7 +64,7 @@ timeT::timeT(int y,int M,int d,int h,int m){
         this->start.day=sDay;
         this->start.hour=sHour;
         this->start.minute=sMinute;
-        cout << "请输入提醒时间（年-月-日 时:分）：";
+        cout << "请输入提醒时间（年 月 日 时 分）：";
         int rYear, rMonth, rDay, rHour, rMinute;
         cin >> rYear >> rMonth >> rDay >> rHour >> rMinute;
         this->timerReminder.year=rYear;
@@ -201,14 +201,14 @@ void delTask(task *myTask,int deleteId){
     }//显示某一月的任务
 
     void showTaskAll(task *myTask){
-        bool flag;//记录起泡中是否发生交换
-        int i,j,temp;
-        int loc[task::taskLive]={-1};//用来记录每个任务的位置
-        for(i=0;i<task::taskLive && myTask[i].id!=0;i++){
+        int loc[LIST_SIZE]={-1};//用来记录每个任务的位置
+        for(int i=0;i<task::taskLive && myTask[i].id!=0;i++){
             loc[i]=i;
         }//查找id不为0的任务记录其下标，存储于loc数组
 
-        for( i=0;i<task::taskLive && myTask[i].id!=0;i++){
+        bool flag;//记录起泡中是否发生交换
+        int i,j,temp;
+        for( i=0;i<task::taskLive;i++){
             flag=false;
             for( j=0;j<task::taskLive-i;j++){
                 if((myTask[j+1].start.year<myTask[j].start.year) || (myTask[j+1].start.year==myTask[j].start.year&&myTask[j+1].start.month<myTask[j].start.month) || (myTask[j+1].start.year==myTask[j].start.year&&myTask[j+1].start.month==myTask[j].start.month&&myTask[j+1].start.day<myTask[j].start.day) || (myTask[j+1].start.year==myTask[j].start.year&&myTask[j+1].start.month==myTask[j].start.month&&myTask[j+1].start.day==myTask[j].start.day&&myTask[j+1].start.hour<myTask[j].start.hour) || (myTask[j+1].start.year==myTask[j].start.year&&myTask[j+1].start.month==myTask[j].start.month&&myTask[j+1].start.day==myTask[j].start.day&&myTask[j+1].start.hour==myTask[j].start.hour&&myTask[j+1].start.minute<myTask[j].start.minute)){
@@ -220,6 +220,7 @@ void delTask(task *myTask,int deleteId){
             }
             if(!flag) break;
         }//按照时间冒泡排序
+
         for (i=0; i<task::taskLive; i++){
             myTask[loc[i]].display();
         }
@@ -369,7 +370,7 @@ bool loadTask(task mytask[], char *userfile, char *inputPassword)
                 memset(tmp, 0, sizeof(tmp)); //记得清零tmp为后来做准备
             }
             fclose(fp);
-            printf("登录成功！");
+            printf("登录成功！\n");
             return 1;//登录成功返回1，条件判断成立，进入下一步
         }
         else
