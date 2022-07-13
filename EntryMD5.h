@@ -9,19 +9,20 @@
 #define EntryMD5_H
 
 #ifdef __cplusplus
-extern "C" {
+extern "C"
+{
 #endif
 
-/*
- this is only lower case 32bit
- 32位小写
- usage:
- char keyValue[64];
- memset(keyValue,0,sizeof(keyValue));
- EntryMD5("123456",keyValue);
- printf("%s", keyValue); // so, md5 123456 = "e10adc3949ba59abbe56e057f20f883e"
- */
-void EntryMD5(const char* from,char* to);
+    /*
+     this is only lower case 32bit
+     32位小写
+     usage:
+     char keyValue[64];
+     memset(keyValue,0,sizeof(keyValue));
+     EntryMD5("123456",keyValue);
+     printf("%s", keyValue); // so, md5 123456 = "e10adc3949ba59abbe56e057f20f883e"
+     */
+    void EntryMD5(const char *from, char *to);
 
 #ifdef __cplusplus
 }

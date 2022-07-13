@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/todo.dir/main.cpp.o CMakeFiles/todo.dir/task.cpp.o CMakeFiles/todo.dir/add_name2file.cpp.o CMakeFiles/todo.dir/EntryMD5.c.o CMakeFiles/todo.dir/deleteSpace.cpp.o  -o todo -lpthread 

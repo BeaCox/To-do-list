@@ -2,8 +2,8 @@
 #include <cstring>
 char *Int2String(int num) // 10进制
 {
-    static char str[100]; //str作为返回值不能是局部变量
-    memset(str,0,sizeof(str));
+    static char str[100]; // str作为返回值不能是局部变量
+    memset(str, 0, sizeof(str));
     int i = 0;   //指示填充str
     if (num < 0) //如果num为负数，将num变正
     {
