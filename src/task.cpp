@@ -221,7 +221,7 @@ void showTaskByMonth(task *myTask, int year, int month)
         flag = false;
         for (j = 0; j < num - i; j++)
         {
-            if ((myTask[j + 1].start.day < myTask[j].start.day) || (myTask[j + 1].start.day = myTask[j].start.day && myTask[j + 1].start.hour < myTask[j].start.hour) || (myTask[j + 1].start.day = myTask[j].start.day && myTask[j + 1].start.hour == myTask[j].start.hour && myTask[j + 1].start.minute < myTask[j].start.minute))
+            if ((myTask[j + 1].start.day < myTask[j].start.day) || (myTask[j + 1].start.day == myTask[j].start.day && myTask[j + 1].start.hour < myTask[j].start.hour) || (myTask[j + 1].start.day == myTask[j].start.day && myTask[j + 1].start.hour == myTask[j].start.hour && myTask[j + 1].start.minute < myTask[j].start.minute))
             {
                 temp = loc[j];
                 loc[j] = loc[j + 1];
