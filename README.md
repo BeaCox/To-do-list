@@ -16,7 +16,6 @@
 <p align="center">
 <img src="https://img.shields.io/github/license/pureink/inkrss?style=for-the-badge"/>  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
 </p>
-[TOC]
 
 ## 项目背景
 
