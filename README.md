@@ -1,61 +1,81 @@
-# To-do-list
+<p align="center">
+    <h1 align="center">To-do-list</h1>
+</p>
+  <p align="center">
+    本地运行的任务管理系统
+    <br />
+    <br />
+    <a href="https://github.com/BowenYoung/To-do-list/blob/main/requirements.md">作业目标</a>
+    ·
+    <a href="https://github.com/BowenYoung/To-do-list/releases">
+    程序下载</a>
+    ·
+    <a href="https://github.com/BowenYoung/To-do-list/issues">报告Bug</a>
+  </p>
+
+<p align="center">
+<img src="https://img.shields.io/github/license/pureink/inkrss?style=for-the-badge"/><img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
+</p>
+[TOC]
+
+## 项目背景
+
+2021-2022学年夏季学期，SJTU计算机编程实践课程NIS1336大作业要求：使用C++语言开发一个有用而且有趣的日程管理软件，以小组方式完成，每个小组不超过3人。我与[@cyChen2003](https://github.com/cyChen2003)、[@skywalker107](https://github.com/skywalker107)合作完成了该项目。
+
 ## 作业目标
- 使用C++语言开发一个有用而且有趣的日程管理软件，以小组方式完成，每个小组不超过3人。
 
-实现如下功能：
+[阅读更多](https://github.com/BowenYoung/To-do-list/blob/main/requirements.md)
 
- + 使用命令行界面；
- + 账户管理：
-<br>输入用户名、口令；
-<br>口令不能明文保存，要加密保存口令或保存口令的HASH值；
+## 运行环境
+🎉绝大多数Linux发行版。
 
-+ 任务录入；
-<br>任务属性(可以根据需求进行调整）： 任务名称、启动时间、优先级（高中低）、分类（学习、娱乐、生活）、提醒时间；
-<br>每个任务的开始时间不能相同；
-<br>任务名称+开始时间，要具有唯一性；
-<br>任务的属性，比如优先级，类型，具有缺省值；
-<br>给每个任务分配唯一的id；
-   
-+ 任务保存：
-<br>输入的任务，要保存到本地文件；每一个任务输入完成后自动保存到文件；
-<br>**注意： 任务数据要保存到文件，而不是数据库；**
+## 特点
 
-+ 任务加载：
-<br>用户登录后，从文件加载任务列表，保存到内存；
+🔒**md5加密 ** - 密码采用md5加密后保存在`[用户名].txt`文件中
+📢**多线程** - 任务提醒功能与其他功能采用不同线程，互不影响
+⚡**快捷调用** - 能够一次性执行多条命令，也可以快速调用命令行参数完成动作
 
-+ 任务删除；
-<br>根据任务id删除任务；
+## 使用方法
 
-+ 任务显示（可以自由设计显示方式）：
-<br>比如，显示某一天/某个月的所有任务，以开始时间排序；
-
-+ 任务提醒：
-<br>在约定的提醒时间屏幕打印提醒；
-
- 
-
-## 命令行参数
-程序应具有完整的命令行帮助说明和使用示例。
-
-命令行参数应支持 run，addtask，showtask，deltask等命令。 其中run方式以shell方式循环运行，等待用户输入命令；
-
-比如：
-
+```bash
+-r #运行程序
+-a #添加任务
+-sxxxx-xx #查看某月的任务
+-sxxxx-xx-xx #查看某天的任务
+-s #查看所有任务
+-d<num> #删除id为num的任务
+-h #查看帮助
 ```
-$ myschedule  run     
-$ myschedule  user1 password   addtask  tasknam1….
-```
- 
 
-## 高级进阶 ( 可选, 加分项）
-+ 以多线程方式运行。在后台周期性检查任务，进行提醒；
-+ 以图形界面完成该作业；
- 
+其中`-r`方式以shell方式循环运行，等待用户输入命令。其他选项在验证登陆状态后，执行一条命令则结束。
+创建用户并添加任务后，用户名、加密后的密码以及任务信息将保存在与用户名同名的txt文件中，请勿删除。
 
-## 作业提交资料
-+ 程序源代码；
-+ 可执行程序；
-+ cmake文件；
-+ 测试程序（shell程序，调用命令行参数进行任务的增删查改等）；
-+ 设计文档（小组成员名单，分工的详细说明，模块与类的设计、流程图、关键技术问题说明，3~5页）；
-+ 课程学习心得，以及对课程的反馈与建议。 
+## TODO
+
+- [x] 账户登录
+- [x] 任务录入
+- [x] 任务保存
+- [x] 任务加载
+- [x] 任务删除
+- [x] 任务显示
+- [x] 任务提醒
+- [x] 命令行参数
+- [x] 多线程检查任务
+- [ ] 图形界面
+
+## 作者
+
+[@BowenYoung](https://github.com/BowenYoung)
+[@cyChen2003](https://github.com/cyChen2003)
+[@skywalker107](https://github.com/skywalker107)
+
+(根据用户名首字母排序)
+
+## 鸣谢
+
+MD5加密代码来源[@foolsparadise](https://github.com/foolsparadise)
+
+## 协议
+
+[The MIT License](https://opensource.org/licenses/MIT)
+
