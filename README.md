@@ -36,14 +36,15 @@
 
 ## 使用方法
 
+在[Releases](https://github.com/BowenYoung/To-do-list/releases)中下载最新版程序，在根目录下打开终端
 ```bash
--r #运行程序
--a #添加任务
--sxxxx-xx #查看某月的任务
--sxxxx-xx-xx #查看某天的任务
--s #查看所有任务
--d<num> #删除id为num的任务
--h #查看帮助
+./todo -r #运行程序
+./todo -a #添加任务
+./todo -sxxxx-xx #查看某月的任务
+./todo -sxxxx-xx-xx #查看某天的任务
+./todo -s #查看所有任务
+./todo -d<num> #删除id为num的任务
+./todo -h #查看帮助
 ```
 
 其中`-r`方式以shell方式循环运行，等待用户输入命令。其他选项在验证登陆状态后，执行一条命令则结束。
