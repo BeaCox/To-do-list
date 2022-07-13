@@ -32,8 +32,8 @@
 ## 特点
 
 🔒**md5加密 ** - 密码采用md5加密后保存在`[用户名].txt`文件中
-📢**多线程** - 任务提醒功能与其他功能采用不同线程，互不影响
-⚡**快捷调用** - 能够一次性执行多条命令，也可以快速调用命令行参数完成动作
+<br />📢**多线程** - 任务提醒功能与其他功能采用不同线程，互不影响
+<br />⚡**快捷调用** - 能够一次性执行多条命令，也可以快速调用命令行参数完成动作
 
 ## 使用方法
 
@@ -66,8 +66,8 @@
 ## 作者
 
 [@BowenYoung](https://github.com/BowenYoung)
-[@cyChen2003](https://github.com/cyChen2003)
-[@skywalker107](https://github.com/skywalker107)
+<br />[@cyChen2003](https://github.com/cyChen2003)
+<br />[@skywalker107](https://github.com/skywalker107)
 
 (根据用户名首字母排序)
 
