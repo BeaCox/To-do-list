@@ -1,0 +1,40 @@
+r
+user1
+qwe123
+y
+add
+task1
+2022 07 14 16 40
+2022 07 14 16 30
+n
+n
+show
+add
+task2
+2022 07 14 22 40
+2022 07 14 22 30
+y
+娱乐
+y
+4
+show
+add
+task3
+2022 07 15 22 40
+2022 07 15 22 30
+n
+n
+show
+add
+task4
+2022 07 16 22 40
+2022 07 16 22 30
+n
+n
+show
+del 3
+show
+show 2022-07
+show 2022-07-14
+quit
+

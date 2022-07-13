@@ -1,0 +1,15 @@
+#!/bin/bash
+echo "请确保当前目录下有test.sh,todo,input.txt文件"
+echo "本脚本完成的任务："
+echo "注册一个用户名为user1，密码为qwe123的用户"
+echo "创建4个任务，其中只有task2指定分类为娱乐、指定优先级为4，其余为默认分类（学习）以及默认优先级3"
+echo "创建一个任务show一次"
+echo "删除id为3的任务（task3）"
+echo "展示全部任务"
+echo "展示2022年7月的任务"
+echo "展示2022年7月14日的任务"
+echo "退出程序"
+echo "----------start test----------"
+./todo -r < input.txt > output.txt
+echo "----------end test----------"
+echo "请在output.txt中查看输出"
