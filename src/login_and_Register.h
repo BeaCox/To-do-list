@@ -27,7 +27,7 @@ void Register(char *inputName, char *inputPassword)
         while (!checkNameRepeat)
         {
             printf("请注册用户名(不超过40个字符，以换行符作为结尾)\n");
-            getchar();
+            if(cin.peek()=='\n') getchar();
             std::cin.getline(inputName, 45);
             if (fopen(name2File(inputName), "r+") == NULL)
                 checkNameRepeat = 1; //未注册用户则标记置为1
