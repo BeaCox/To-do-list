@@ -183,7 +183,7 @@ void showTaskByDay(task *myTask, int year, int month, int day)
         flag = false;
         for (j = 0; j < num - i; j++)
         {
-            if ((myTask[j + 1].start.hour < myTask[j].start.hour) || (myTask[j + 1].start.hour == myTask[j].start.hour && myTask[j + 1].start.minute < myTask[j].start.minute))
+            if ((myTask[loc[j + 1]].start.hour < myTask[loc[j]].start.hour) || (myTask[loc[j + 1]].start.hour == myTask[loc[j]].start.hour && myTask[loc[j + 1]].start.minute < myTask[loc[j]].start.minute))
             {
                 temp = loc[j];
                 loc[j] = loc[j + 1];
@@ -221,7 +221,7 @@ void showTaskByMonth(task *myTask, int year, int month)
         flag = false;
         for (j = 0; j < num - i; j++)
         {
-            if ((myTask[j + 1].start.day < myTask[j].start.day) || (myTask[j + 1].start.day == myTask[j].start.day && myTask[j + 1].start.hour < myTask[j].start.hour) || (myTask[j + 1].start.day == myTask[j].start.day && myTask[j + 1].start.hour == myTask[j].start.hour && myTask[j + 1].start.minute < myTask[j].start.minute))
+            if ((myTask[loc[j + 1]].start.day < myTask[loc[j]].start.day) || (myTask[loc[j + 1]].start.day == myTask[loc[j]].start.day && myTask[loc[j + 1]].start.hour < myTask[loc[j]].start.hour) || (myTask[loc[j + 1]].start.day == myTask[loc[j]].start.day && myTask[loc[j + 1]].start.hour == myTask[loc[j]].start.hour && myTask[loc[j + 1]].start.minute < myTask[loc[j]].start.minute))
             {
                 temp = loc[j];
                 loc[j] = loc[j + 1];
@@ -254,7 +254,7 @@ void showTaskAll(task *myTask)
         flag = false;
         for (j = 0; j < task::taskLive - i; j++)
         {
-            if ((myTask[j + 1].start.year < myTask[j].start.year) || (myTask[j + 1].start.year == myTask[j].start.year && myTask[j + 1].start.month < myTask[j].start.month) || (myTask[j + 1].start.year == myTask[j].start.year && myTask[j + 1].start.month == myTask[j].start.month && myTask[j + 1].start.day < myTask[j].start.day) || (myTask[j + 1].start.year == myTask[j].start.year && myTask[j + 1].start.month == myTask[j].start.month && myTask[j + 1].start.day == myTask[j].start.day && myTask[j + 1].start.hour < myTask[j].start.hour) || (myTask[j + 1].start.year == myTask[j].start.year && myTask[j + 1].start.month == myTask[j].start.month && myTask[j + 1].start.day == myTask[j].start.day && myTask[j + 1].start.hour == myTask[j].start.hour && myTask[j + 1].start.minute < myTask[j].start.minute))
+            if ((myTask[loc[j + 1]].start.year < myTask[loc[j]].start.year) || (myTask[loc[j + 1]].start.year == myTask[loc[j]].start.year && myTask[loc[j + 1]].start.month < myTask[loc[j]].start.month) || (myTask[loc[j + 1]].start.year == myTask[loc[j]].start.year && myTask[loc[j + 1]].start.month == myTask[loc[j]].start.month && myTask[loc[j + 1]].start.day < myTask[loc[j]].start.day) || (myTask[loc[j + 1]].start.year == myTask[loc[j]].start.year && myTask[loc[j + 1]].start.month == myTask[loc[j]].start.month && myTask[loc[j + 1]].start.day == myTask[loc[j]].start.day && myTask[loc[j + 1]].start.hour < myTask[loc[j]].start.hour) || (myTask[loc[j + 1]].start.year == myTask[loc[j]].start.year && myTask[loc[j + 1]].start.month == myTask[loc[j]].start.month && myTask[loc[j + 1]].start.day == myTask[loc[j]].start.day && myTask[loc[j + 1]].start.hour == myTask[loc[j]].start.hour && myTask[loc[j + 1]].start.minute < myTask[loc[j]].start.minute))
             {
                 temp = loc[j];
                 loc[j] = loc[j + 1];
