@@ -14,9 +14,8 @@
   </p>
 
 <p align="center">
-<img src="https://img.shields.io/github/license/pureink/inkrss?style=for-the-badge"/><img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
+<img src="https://img.shields.io/github/license/pureink/inkrss?style=for-the-badge"/>  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
 </p>
-[TOC]
 
 ## 项目背景
 
@@ -31,20 +30,21 @@
 
 ## 特点
 
-🔒**md5加密 ** - 密码采用md5加密后保存在`[用户名].txt`文件中
-📢**多线程** - 任务提醒功能与其他功能采用不同线程，互不影响
-⚡**快捷调用** - 能够一次性执行多条命令，也可以快速调用命令行参数完成动作
+🔒**md5加密** - 密码采用md5加密后保存在`[用户名].txt`文件中
+<br />📢**多线程** - 任务提醒功能与其他功能采用不同线程，互不影响
+<br />⚡**快捷调用** - 能够一次性执行多条命令，也可以快速调用命令行参数完成动作
 
 ## 使用方法
 
+在[Releases](https://github.com/BowenYoung/To-do-list/releases)中下载最新版程序，在根目录下打开终端
 ```bash
--r #运行程序
--a #添加任务
--sxxxx-xx #查看某月的任务
--sxxxx-xx-xx #查看某天的任务
--s #查看所有任务
--d<num> #删除id为num的任务
--h #查看帮助
+./todo -r #运行程序
+./todo -a #添加任务
+./todo -sxxxx-xx #查看某月的任务
+./todo -sxxxx-xx-xx #查看某天的任务
+./todo -s #查看所有任务
+./todo -d<num> #删除id为num的任务
+./todo -h #查看帮助
 ```
 
 其中`-r`方式以shell方式循环运行，等待用户输入命令。其他选项在验证登陆状态后，执行一条命令则结束。
@@ -66,8 +66,8 @@
 ## 作者
 
 [@BowenYoung](https://github.com/BowenYoung)
-[@cyChen2003](https://github.com/cyChen2003)
-[@skywalker107](https://github.com/skywalker107)
+<br />[@cyChen2003](https://github.com/cyChen2003)
+<br />[@skywalker107](https://github.com/skywalker107)
 
 (根据用户名首字母排序)
 
