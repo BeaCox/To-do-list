@@ -5,7 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/code/Desktop/final/EntryMD5.c" "/home/code/Desktop/final/build/CMakeFiles/todo.dir/EntryMD5.c.o"
+  "/home/code/Desktop/To-do-list/src/EntryMD5.c" "/home/code/Desktop/To-do-list/build/CMakeFiles/todo.dir/EntryMD5.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -13,10 +13,10 @@ set(CMAKE_C_COMPILER_ID "GNU")
 set(CMAKE_C_TARGET_INCLUDE_PATH
   )
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/code/Desktop/final/add_name2file.cpp" "/home/code/Desktop/final/build/CMakeFiles/todo.dir/add_name2file.cpp.o"
-  "/home/code/Desktop/final/deleteSpace.cpp" "/home/code/Desktop/final/build/CMakeFiles/todo.dir/deleteSpace.cpp.o"
-  "/home/code/Desktop/final/main.cpp" "/home/code/Desktop/final/build/CMakeFiles/todo.dir/main.cpp.o"
-  "/home/code/Desktop/final/task.cpp" "/home/code/Desktop/final/build/CMakeFiles/todo.dir/task.cpp.o"
+  "/home/code/Desktop/To-do-list/src/add_name2file.cpp" "/home/code/Desktop/To-do-list/build/CMakeFiles/todo.dir/add_name2file.cpp.o"
+  "/home/code/Desktop/To-do-list/src/deleteSpace.cpp" "/home/code/Desktop/To-do-list/build/CMakeFiles/todo.dir/deleteSpace.cpp.o"
+  "/home/code/Desktop/To-do-list/src/main.cpp" "/home/code/Desktop/To-do-list/build/CMakeFiles/todo.dir/main.cpp.o"
+  "/home/code/Desktop/To-do-list/src/task.cpp" "/home/code/Desktop/To-do-list/build/CMakeFiles/todo.dir/task.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

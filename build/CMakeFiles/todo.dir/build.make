@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/code/Desktop/final
+CMAKE_SOURCE_DIR = /home/code/Desktop/To-do-list/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/code/Desktop/final/build
+CMAKE_BINARY_DIR = /home/code/Desktop/To-do-list/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/todo.dir/depend.make
@@ -58,17 +58,17 @@ include CMakeFiles/todo.dir/progress.make
 include CMakeFiles/todo.dir/flags.make
 
 CMakeFiles/todo.dir/main.cpp.o: CMakeFiles/todo.dir/flags.make
-CMakeFiles/todo.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/code/Desktop/final/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/todo.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/todo.dir/main.cpp.o -c /home/code/Desktop/final/main.cpp
+CMakeFiles/todo.dir/main.cpp.o: /home/code/Desktop/To-do-list/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/code/Desktop/To-do-list/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/todo.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/todo.dir/main.cpp.o -c /home/code/Desktop/To-do-list/src/main.cpp
 
 CMakeFiles/todo.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/todo.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/code/Desktop/final/main.cpp > CMakeFiles/todo.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/code/Desktop/To-do-list/src/main.cpp > CMakeFiles/todo.dir/main.cpp.i
 
 CMakeFiles/todo.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/todo.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/code/Desktop/final/main.cpp -o CMakeFiles/todo.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/code/Desktop/To-do-list/src/main.cpp -o CMakeFiles/todo.dir/main.cpp.s
 
 CMakeFiles/todo.dir/main.cpp.o.requires:
 
@@ -82,17 +82,17 @@ CMakeFiles/todo.dir/main.cpp.o.provides.build: CMakeFiles/todo.dir/main.cpp.o
 
 
 CMakeFiles/todo.dir/task.cpp.o: CMakeFiles/todo.dir/flags.make
-CMakeFiles/todo.dir/task.cpp.o: ../task.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/code/Desktop/final/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/todo.dir/task.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/todo.dir/task.cpp.o -c /home/code/Desktop/final/task.cpp
+CMakeFiles/todo.dir/task.cpp.o: /home/code/Desktop/To-do-list/src/task.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/code/Desktop/To-do-list/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/todo.dir/task.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/todo.dir/task.cpp.o -c /home/code/Desktop/To-do-list/src/task.cpp
 
 CMakeFiles/todo.dir/task.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/todo.dir/task.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/code/Desktop/final/task.cpp > CMakeFiles/todo.dir/task.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/code/Desktop/To-do-list/src/task.cpp > CMakeFiles/todo.dir/task.cpp.i
 
 CMakeFiles/todo.dir/task.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/todo.dir/task.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/code/Desktop/final/task.cpp -o CMakeFiles/todo.dir/task.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/code/Desktop/To-do-list/src/task.cpp -o CMakeFiles/todo.dir/task.cpp.s
 
 CMakeFiles/todo.dir/task.cpp.o.requires:
 
@@ -106,17 +106,17 @@ CMakeFiles/todo.dir/task.cpp.o.provides.build: CMakeFiles/todo.dir/task.cpp.o
 
 
 CMakeFiles/todo.dir/add_name2file.cpp.o: CMakeFiles/todo.dir/flags.make
-CMakeFiles/todo.dir/add_name2file.cpp.o: ../add_name2file.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/code/Desktop/final/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/todo.dir/add_name2file.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/todo.dir/add_name2file.cpp.o -c /home/code/Desktop/final/add_name2file.cpp
+CMakeFiles/todo.dir/add_name2file.cpp.o: /home/code/Desktop/To-do-list/src/add_name2file.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/code/Desktop/To-do-list/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/todo.dir/add_name2file.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/todo.dir/add_name2file.cpp.o -c /home/code/Desktop/To-do-list/src/add_name2file.cpp
 
 CMakeFiles/todo.dir/add_name2file.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/todo.dir/add_name2file.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/code/Desktop/final/add_name2file.cpp > CMakeFiles/todo.dir/add_name2file.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/code/Desktop/To-do-list/src/add_name2file.cpp > CMakeFiles/todo.dir/add_name2file.cpp.i
 
 CMakeFiles/todo.dir/add_name2file.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/todo.dir/add_name2file.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/code/Desktop/final/add_name2file.cpp -o CMakeFiles/todo.dir/add_name2file.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/code/Desktop/To-do-list/src/add_name2file.cpp -o CMakeFiles/todo.dir/add_name2file.cpp.s
 
 CMakeFiles/todo.dir/add_name2file.cpp.o.requires:
 
@@ -130,17 +130,17 @@ CMakeFiles/todo.dir/add_name2file.cpp.o.provides.build: CMakeFiles/todo.dir/add_
 
 
 CMakeFiles/todo.dir/EntryMD5.c.o: CMakeFiles/todo.dir/flags.make
-CMakeFiles/todo.dir/EntryMD5.c.o: ../EntryMD5.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/code/Desktop/final/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/todo.dir/EntryMD5.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/todo.dir/EntryMD5.c.o   -c /home/code/Desktop/final/EntryMD5.c
+CMakeFiles/todo.dir/EntryMD5.c.o: /home/code/Desktop/To-do-list/src/EntryMD5.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/code/Desktop/To-do-list/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/todo.dir/EntryMD5.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/todo.dir/EntryMD5.c.o   -c /home/code/Desktop/To-do-list/src/EntryMD5.c
 
 CMakeFiles/todo.dir/EntryMD5.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/todo.dir/EntryMD5.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/code/Desktop/final/EntryMD5.c > CMakeFiles/todo.dir/EntryMD5.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/code/Desktop/To-do-list/src/EntryMD5.c > CMakeFiles/todo.dir/EntryMD5.c.i
 
 CMakeFiles/todo.dir/EntryMD5.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/todo.dir/EntryMD5.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/code/Desktop/final/EntryMD5.c -o CMakeFiles/todo.dir/EntryMD5.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/code/Desktop/To-do-list/src/EntryMD5.c -o CMakeFiles/todo.dir/EntryMD5.c.s
 
 CMakeFiles/todo.dir/EntryMD5.c.o.requires:
 
@@ -154,17 +154,17 @@ CMakeFiles/todo.dir/EntryMD5.c.o.provides.build: CMakeFiles/todo.dir/EntryMD5.c.
 
 
 CMakeFiles/todo.dir/deleteSpace.cpp.o: CMakeFiles/todo.dir/flags.make
-CMakeFiles/todo.dir/deleteSpace.cpp.o: ../deleteSpace.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/code/Desktop/final/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/todo.dir/deleteSpace.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/todo.dir/deleteSpace.cpp.o -c /home/code/Desktop/final/deleteSpace.cpp
+CMakeFiles/todo.dir/deleteSpace.cpp.o: /home/code/Desktop/To-do-list/src/deleteSpace.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/code/Desktop/To-do-list/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/todo.dir/deleteSpace.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/todo.dir/deleteSpace.cpp.o -c /home/code/Desktop/To-do-list/src/deleteSpace.cpp
 
 CMakeFiles/todo.dir/deleteSpace.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/todo.dir/deleteSpace.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/code/Desktop/final/deleteSpace.cpp > CMakeFiles/todo.dir/deleteSpace.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/code/Desktop/To-do-list/src/deleteSpace.cpp > CMakeFiles/todo.dir/deleteSpace.cpp.i
 
 CMakeFiles/todo.dir/deleteSpace.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/todo.dir/deleteSpace.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/code/Desktop/final/deleteSpace.cpp -o CMakeFiles/todo.dir/deleteSpace.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/code/Desktop/To-do-list/src/deleteSpace.cpp -o CMakeFiles/todo.dir/deleteSpace.cpp.s
 
 CMakeFiles/todo.dir/deleteSpace.cpp.o.requires:
 
@@ -195,7 +195,7 @@ todo: CMakeFiles/todo.dir/EntryMD5.c.o
 todo: CMakeFiles/todo.dir/deleteSpace.cpp.o
 todo: CMakeFiles/todo.dir/build.make
 todo: CMakeFiles/todo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/code/Desktop/final/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable todo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/code/Desktop/To-do-list/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable todo"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/todo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -216,6 +216,6 @@ CMakeFiles/todo.dir/clean:
 .PHONY : CMakeFiles/todo.dir/clean
 
 CMakeFiles/todo.dir/depend:
-	cd /home/code/Desktop/final/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/code/Desktop/final /home/code/Desktop/final /home/code/Desktop/final/build /home/code/Desktop/final/build /home/code/Desktop/final/build/CMakeFiles/todo.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/code/Desktop/To-do-list/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/code/Desktop/To-do-list/src /home/code/Desktop/To-do-list/src /home/code/Desktop/To-do-list/build /home/code/Desktop/To-do-list/build /home/code/Desktop/To-do-list/build/CMakeFiles/todo.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/todo.dir/depend
 

@@ -6,25 +6,25 @@
 
 #IncludeRegexTransform: 
 
-/home/code/Desktop/final/EntryMD5.h
+/home/code/Desktop/To-do-list/src/EntryMD5.h
 
-/home/code/Desktop/final/add_name2file.cpp
+/home/code/Desktop/To-do-list/src/add_name2file.cpp
 add_name2file.h
-/home/code/Desktop/final/add_name2file.h
+/home/code/Desktop/To-do-list/src/add_name2file.h
 cstring
 -
 
-/home/code/Desktop/final/add_name2file.h
+/home/code/Desktop/To-do-list/src/add_name2file.h
 
-/home/code/Desktop/final/deleteSpace.cpp
+/home/code/Desktop/To-do-list/src/deleteSpace.cpp
 deleteSpace.h
-/home/code/Desktop/final/deleteSpace.h
+/home/code/Desktop/To-do-list/src/deleteSpace.h
 cstring
 -
 
-/home/code/Desktop/final/deleteSpace.h
+/home/code/Desktop/To-do-list/src/deleteSpace.h
 
-/home/code/Desktop/final/login_and_Register.h
+/home/code/Desktop/To-do-list/src/login_and_Register.h
 stdio.h
 -
 iostream
@@ -32,9 +32,9 @@ iostream
 cstring
 -
 add_name2file.h
-/home/code/Desktop/final/add_name2file.h
+/home/code/Desktop/To-do-list/src/add_name2file.h
 
-/home/code/Desktop/final/main.cpp
+/home/code/Desktop/To-do-list/src/main.cpp
 getopt.h
 -
 stdio.h
@@ -46,37 +46,37 @@ iostream
 string.h
 -
 task.h
-/home/code/Desktop/final/task.h
+/home/code/Desktop/To-do-list/src/task.h
 login_and_Register.h
-/home/code/Desktop/final/login_and_Register.h
+/home/code/Desktop/To-do-list/src/login_and_Register.h
 thread
 -
 pthread.h
 -
 
-/home/code/Desktop/final/stringAndInt.h
+/home/code/Desktop/To-do-list/src/stringAndInt.h
 ctype.h
 -
 cstring
 -
 
-/home/code/Desktop/final/task.cpp
+/home/code/Desktop/To-do-list/src/task.cpp
 task.h
-/home/code/Desktop/final/task.h
+/home/code/Desktop/To-do-list/src/task.h
 cstring
 -
 stdio.h
 -
 stringAndInt.h
-/home/code/Desktop/final/stringAndInt.h
+/home/code/Desktop/To-do-list/src/stringAndInt.h
 deleteSpace.h
-/home/code/Desktop/final/deleteSpace.h
+/home/code/Desktop/To-do-list/src/deleteSpace.h
 EntryMD5.h
-/home/code/Desktop/final/EntryMD5.h
+/home/code/Desktop/To-do-list/src/EntryMD5.h
 unistd.h
 -
 
-/home/code/Desktop/final/task.h
+/home/code/Desktop/To-do-list/src/task.h
 iostream
 -
 time.h

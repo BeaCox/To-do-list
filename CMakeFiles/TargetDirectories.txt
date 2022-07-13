@@ -1,3 +1,0 @@
-/home/code/Desktop/To-do-list/CMakeFiles/rebuild_cache.dir
-/home/code/Desktop/To-do-list/CMakeFiles/tasktest.dir
-/home/code/Desktop/To-do-list/CMakeFiles/edit_cache.dir

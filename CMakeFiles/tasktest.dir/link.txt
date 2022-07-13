@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/tasktest.dir/test.cpp.o CMakeFiles/tasktest.dir/task.cpp.o CMakeFiles/tasktest.dir/deleteSpace.cpp.o CMakeFiles/tasktest.dir/add_name2file.cpp.o CMakeFiles/tasktest.dir/EntryMD5.c.o  -o tasktest 
