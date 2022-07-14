@@ -14,9 +14,9 @@
   </p>
 
 <p align="center">
-<img src="https://img.shields.io/github/license/pureink/inkrss?style=for-the-badge"/>  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
+<img src="https://img.shields.io/github/license/BowenYoung/To-do-list?style=for-the-badge"/>  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />  <img src="https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
+<br /><img src="https://img.shields.io/github/last-commit/BowenYoung/To-do-list?color=blue"/>  <img src="https://visitor-badge.glitch.me/badge?page_id=BowenYoung.To-do-list&left_color=red&right_color=green" />  <img src="https://img.shields.io/github/downloads/BowenYoung/To-do-list/total.svg" />
 </p>
-
 ## 项目背景
 
 2021-2022学年夏季学期，SJTU计算机编程实践课程NIS1336大作业要求：使用C++语言开发一个有用而且有趣的日程管理软件，以小组方式完成，每个小组不超过3人。我与[@cyChen2003](https://github.com/cyChen2003)、[@skywalker107](https://github.com/skywalker107)合作完成了该项目。
