@@ -15,7 +15,7 @@
 
 <p align="center">
 <img src="https://img.shields.io/github/license/BowenYoung/To-do-list?style=for-the-badge"/>  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />  <img src="https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
-<br /><img src="https://img.shields.io/github/last-commit/BowenYoung/To-do-list?color=blue"/>  <img src="https://visitor-badge.glitch.me/badge?page_id=BowenYoung.To-do-list&left_color=red&right_color=green" />  <img src="https://img.shields.io/github/downloads/BowenYoung/To-do-list/total.svg" />
+<br /><img src="https://img.shields.io/github/last-commit/BowenYoung/To-do-list?color=blue"/>  <img src="https://visitor-badge.glitch.me/badge?page_id=BowenYoung.To-do-list&left_color=red&right_color=green" />
 </p>
 ## 项目背景
 
