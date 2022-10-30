@@ -65,7 +65,7 @@
 
 ## 作者
 
-[@BowenYoung](https://github.com/BowenYoung)
+[@BeaCox](https://github.com/BeaCox)
 <br />[@cyChen2003](https://github.com/cyChen2003)
 <br />[@skywalker107](https://github.com/skywalker107)
 
